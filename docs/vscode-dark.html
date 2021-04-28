@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>vscode-dark Preview</title>
+        <link rel="stylesheet" href="./index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/editor/vscode-dark.css"
+        />
+    </head>
+    <body>
+        <div id="container"></div>
+        <script src="https://cdn.jsdelivr.net/npm/vditor/dist/index.min.js"></script>
+        <script>
+            new Vditor("container", {
+                mode: "sv",
+                height: 500,
+                width: "80%",
+                preview: {
+                    theme: {
+                        current: "vscode-dark",
+                        path:
+                            "https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/content-theme",
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>
