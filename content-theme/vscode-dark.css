@@ -12,22 +12,15 @@
     background-color: #eaecef;
 }
 .vditor-reset blockquote {
-    color: #6a737d;
-    border-left: 0.25em solid #eaecef;
+    color: #cacaca;
+    border-left: 0.25em solid #135079;
 }
 .vditor-reset iframe {
     border: 1px solid #d1d5da;
 }
 .vditor-reset table tr {
     border-top: 1px solid #c6cbd1;
-    background-color: #fafbfc;
-}
-.vditor-reset table td,
-.vditor-reset table th {
-    border: 1px solid #dfe2e5;
-}
-.vditor-reset table tbody tr:nth-child(2n) {
-    background-color: #fff;
+    background-color: transparent;
 }
 .vditor-reset code:not(.hljs):not(.highlight-chroma) {
     background-color: rgba(27, 31, 35, 0.05);

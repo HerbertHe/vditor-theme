@@ -1,7 +1,7 @@
 .vditor {
     --border-color: #252526;
     --second-color: #6a974e;
-    --panel-background-color: #323233;
+    --panel-background-color: #252526;
     --panel-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     --toolbar-background-color: #323233;
     --toolbar-icon-color: #85837a;
@@ -16,7 +16,7 @@
     --resize-hover-background-color: var(--toolbar-icon-hover-color);
     --count-background-color: rgba(27, 31, 35, 0.05);
     --heading-border-color: #eaecef;
-    --blockquote-color: #6a737d;
+    --blockquote-color: #cccccc;
     --ir-heading-color: #569cd6;
     --ir-title-color: grey;
     --ir-bi-color: #569cd6;
@@ -362,7 +362,7 @@
     color: var(--toolbar-icon-hover-color) !important;
 }
 .vditor-menu--disabled {
-    color: var(--toolbar-icon-color) !important;
+    color: #8c8c8c !important;
     cursor: not-allowed !important;
 }
 .vditor-emojis {
@@ -748,7 +748,7 @@
 }
 .vditor-hint--current,
 .vditor-hint button:not(.vditor-menu--disabled):hover {
-    background-color: var(--toolbar-background-color) !important;
+    background-color: #094771 !important;
     color: var(--toolbar-icon-hover-color) !important;
 }
 .vditor-hint__emoji {
@@ -800,6 +800,9 @@
 }
 .vditor-reset li + li {
     margin-top: 0.25em;
+}
+.vditor-reset li a {
+    color: #358aeb;
 }
 .vditor-reset audio {
     max-width: 100%;
@@ -867,10 +870,19 @@
     margin-top: 0;
     margin-bottom: 16px;
 }
+.vditor-reset p a {
+    color: #358aeb;
+    text-decoration: none;
+}
+.vditor-reset p a:hover {
+    text-decoration: underline;
+}
 .vditor-reset blockquote {
-    padding: 0 1em;
-    color: #6a737d;
-    border-left: 0.25em solid #eaecef;
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+    color: #cacaca;
+    border-left: 0.25em solid #135079;
+    background-color: #282828;
     margin: 0 0 16px;
 }
 .vditor-reset blockquote > :first-child {
@@ -899,20 +911,16 @@
     border-spacing: 0;
 }
 .vditor-reset table tr {
-    background-color: #fafbfc;
+    background-color: transparent;
     border-top: 1px solid #c6cbd1;
 }
 .vditor-reset table td,
 .vditor-reset table th {
     padding: 6px 13px;
-    border: 1px solid #dfe2e5;
     word-break: normal;
 }
 .vditor-reset table th {
     font-weight: 600;
-}
-.vditor-reset table tbody tr:nth-child(2n) {
-    background-color: #fff;
 }
 .vditor-reset code:not(.hljs):not(.highlight-chroma) {
     padding: 0.2em 0.4em;
@@ -958,6 +966,17 @@
 .vditor-reset .language-plantuml {
     margin-bottom: 16px;
 }
+
+.vditor-reset .language-abc,
+.vditor-reset .language-echarts,
+.vditor-reset .language-flowchart,
+.vditor-reset .language-graphviz,
+.vditor-reset .language-mermaid,
+.vditor-reset .language-mindmap,
+.vditor-reset .language-plantuml {
+    background-color: #fff;
+}
+
 .vditor-reset .language-math mjx-container:focus {
     outline: none;
     cursor: context-menu;
@@ -1501,7 +1520,7 @@
     color: var(--ir-heading-color);
 }
 .vditor-ir__node--expand .vditor-ir__marker--pre code {
-    color: var(--textarea-text-color);
+    color: #cccccc;
     height: auto;
     text-align: left;
 }
