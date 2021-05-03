@@ -2,12 +2,20 @@
 
 vditor适配样式开发
 
+样式参考 [demo](https://goer.icu/vditor-theme)
+
 ## 目录结构
 
 ```text
 ├─editor        # 编辑器样式
 └─renderer      # 渲染页面样式
 ```
+
+## 支持的样式
+
+| 样式名 |
+| vscode-dark |
+| dracula |
 
 ## 使用方法
 
