@@ -19,6 +19,8 @@ vditor适配样式开发
 
 ## 使用方法
 
+> 参考 [index.html](./docs/vscode-dark.html)
+
 以`vscode-dark`为例
 
 - 全局引入主题
