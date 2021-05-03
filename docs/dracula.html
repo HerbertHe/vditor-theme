@@ -4,11 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>vscode-dark Preview</title>
+        <title>dracula Preview</title>
         <link rel="stylesheet" href="./theme.css" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/editor/dracula.css"
+        /> -->
         <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/editor/vscode-dark.css"
+            href="../editor/dracula.css"
         />
     </head>
     <body>
@@ -17,14 +21,15 @@
         <script>
             new Vditor("container", {
                 height: 500,
+                mode: "sv",
                 preview: {
                     theme: {
-                        current: "vscode-dark",
+                        current: "dracula",
                         path:
-                            "https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/content-theme",
+                            "../content-theme",
                     },
                     hljs: {
-                        style: "solarized-dark256",
+                        style: "dracula",
                     },
                 },
             });
