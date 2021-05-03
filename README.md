@@ -11,16 +11,32 @@ vditor适配样式开发
 
 ## 使用方法
 
-- 引入主题
+以`vscode-dark`为例
 
-```text
+- 全局引入主题
+
+在head标签插入
+
+```html
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/editor/vscode-dark.css"
+/>
 ```
 
 - 引入内容主题
 
+修改`options.preview`参数
+
 ```js
 preview: {
-    current: "",
-    path: ""
-}
+    theme: {
+        current: "vscode-dark",
+        path:
+            "https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/content-theme",
+    },
+    hljs: {
+        style: "solarized-dark256",
+    },
+},
 ```
