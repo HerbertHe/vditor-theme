@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>vscode-light Preview</title>
+        <link rel="stylesheet" href="./theme.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/editor/vscode-light.css"
+        />
+        <!-- <link rel="stylesheet" href="../editor/vscode-light.css" /> -->
+    </head>
+    <body>
+        <div id="container"></div>
+        <script src="https://cdn.jsdelivr.net/npm/vditor/dist/index.min.js"></script>
+        <script>
+            new Vditor("container", {
+                height: 500,
+                preview: {
+                    theme: {
+                        current: "vscode-light",
+                        path: "https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/content-theme",
+                    },
+                    hljs: {
+                        style: "autumn",
+                    },
+                },
+            })
+        </script>
+    </body>
+</html>

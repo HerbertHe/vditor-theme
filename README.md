@@ -13,9 +13,11 @@ vditor适配样式开发
 
 ## 支持的样式
 
-| 样式名 |
-| vscode-dark |
-| dracula |
+|    样式名    |
+| :----------: |
+| vscode-dark  |
+| vscode-light |
+|   dracula    |
 
 ## 使用方法
 
