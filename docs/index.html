@@ -6,6 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Theme Preview</title>
         <link rel="stylesheet" href="./index.css" />
+        <script>
+            ;(async () => {
+                const res = await fetch(
+                    "https://cdn.jsdelivr.net/gh/Vanessa219/vditor@master/demo/markdown/zh_CN.md"
+                )
+                const data = await res.text()
+                localStorage.setItem("vditorcontainer", data)
+            })()
+        </script>
     </head>
     <body>
         <h3>vscode-dark</h3>
