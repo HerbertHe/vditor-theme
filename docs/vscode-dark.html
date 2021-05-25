@@ -6,10 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>vscode-dark Preview</title>
         <link rel="stylesheet" href="./theme.css" />
-        <link
+        <link rel="stylesheet" href="../editor/vscode-dark.css" />
+        <!-- <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/editor/vscode-dark.css"
-        />
+        /> -->
     </head>
     <body>
         <div id="container"></div>
@@ -17,17 +18,20 @@
         <script>
             new Vditor("container", {
                 height: 500,
+                outline: {
+                    enable: true,
+                    position: "right",
+                },
                 preview: {
                     theme: {
                         current: "vscode-dark",
-                        path:
-                            "https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/content-theme",
+                        path: "https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/content-theme",
                     },
                     hljs: {
                         style: "solarized-dark256",
                     },
                 },
-            });
+            })
         </script>
     </body>
 </html>

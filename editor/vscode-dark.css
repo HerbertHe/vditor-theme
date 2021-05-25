@@ -9,7 +9,7 @@
     --toolbar-height: 35px;
     --toolbar-divider-margin-top: 8px;
     --textarea-background-color: #1e1e1e;
-    --textarea-text-color: #24292e;
+    --textarea-text-color: #cccccc;
     --resize-icon-color: var(--toolbar-icon-color);
     --resize-background-color: var(--toolbar-background-color);
     --resize-hover-icon-color: var(--panel-background-color);
@@ -1269,6 +1269,7 @@
 }
 .vditor-outline li > span:hover {
     color: var(--toolbar-icon-hover-color);
+    background-color: var(--toolbar-background-color);
 }
 .vditor-outline li > span > span {
     white-space: nowrap;
