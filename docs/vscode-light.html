@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>vscode-light Preview</title>
         <link rel="stylesheet" href="./theme.css" />
-        <link
+        <!-- <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/HerbertHe/vditor-theme@main/editor/vscode-light.css"
-        />
-        <!-- <link rel="stylesheet" href="../editor/vscode-light.css" /> -->
+        /> -->
+        <link rel="stylesheet" href="../editor/vscode-light.css" />
     </head>
     <body>
         <div id="container"></div>
@@ -18,6 +18,9 @@
         <script>
             new Vditor("container", {
                 height: 500,
+                outline: {
+                    enable: true
+                },
                 preview: {
                     theme: {
                         current: "vscode-light",

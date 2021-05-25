@@ -1269,6 +1269,7 @@
 }
 .vditor-outline li > span:hover {
     color: var(--toolbar-icon-hover-color);
+    background-color: var(--toolbar-background-color);
 }
 .vditor-outline li > span > span {
     white-space: nowrap;
